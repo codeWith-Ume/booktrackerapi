@@ -16,5 +16,6 @@ CREATE TABLE books(
     title VARCHAR(50),
     author VARCHAR(50),
     added_date DATE,
+    status VARCHAR(50) DEFAULT 'Reading',
     FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
